@@ -5,11 +5,11 @@ import loadable from '@loadable/component'
 
 import Loading from 'components/Common/Loading'
 
-const Dashboard = loadable(() => import('../containers/Dashboard'), {
+const Dashboard = loadable(() => import('../containers/views/Dashboard'), {
   fallback: <Loading />
 })
 
-const Home = loadable(() => import('../containers/Home'), {
+const Home = loadable(() => import('../containers/views/Home'), {
   fallback: <Loading />
 })
 
